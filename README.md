@@ -1,0 +1,1 @@
+# Minikube_implementation_sample
