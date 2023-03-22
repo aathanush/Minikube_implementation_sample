@@ -1,0 +1,12 @@
+FROM python:3.9.7
+
+
+
+# copy files from local machine to docker image
+COPY . /
+
+EXPOSE 8000
+
+RUN chmod +x ./entrypoint.sh
+ENTRYPOINT ["./entrypoint.sh"]
+CMD ["sh", "-c", "tail -f /dev/null"]
